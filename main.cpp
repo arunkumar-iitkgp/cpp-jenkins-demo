@@ -1,4 +1,4 @@
-#include <iostream>
+#include <cstdio>
 #include <cassert>
 #include <climits>
 #include <string>
@@ -10,7 +10,7 @@ int add(int a, int b) {
 
 // A simple test function
 void runTests() {
-    std::cout << "Running unit tests..." << std::endl;
+    printf("Running unit tests...\n");
 
     // Basic positive addition
     assert(add(2, 3) == 5);
@@ -35,7 +35,7 @@ void runTests() {
     assert(add(INT_MAX, 0) == INT_MAX);
     assert(add(INT_MIN, 0) == INT_MIN);
 
-    std::cout << "All tests passed!" << std::endl;
+    printf("All tests passed!\n");
 }
 
 int main(int argc, char* argv[]) {
@@ -43,8 +43,8 @@ int main(int argc, char* argv[]) {
     if (argc > 1 && std::string(argv[1]) == "test") {
         runTests();
     } else {
-        std::cout << "Hello from your C++ System!" << std::endl;
-        std::cout << "2 + 3 = " << add(2, 3) << std::endl;
+        printf("Hello from your C++ System!\n");
+        printf("2 + 3 = %d\n", add(2, 3));
     }
     return 0;
 }
