@@ -9,6 +9,7 @@ int add(int a, int b) {
 }
 
 // A simple test function
+
 void runTests() {
     printf("Running unit tests...\n");
 
