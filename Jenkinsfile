@@ -14,7 +14,7 @@ pipeline {
                 echo 'Compiling C++ Code...'
                 // Compiles main.cpp into an executable named 'my_system'
                 // Note: Windows users use 'g++ main.cpp -o my_system.exe'
-                sh 'g++ main.cpp -o my_system.exe' 
+                bat 'g++ main.cpp -o my_system.exe' 
             }
         }
         
@@ -23,7 +23,7 @@ pipeline {
                 echo 'Executing Automated Unit Tests...'
                 // Runs the compiled program with the "test" argument
                 // Note: Windows users use 'bat "my_system.exe test"'
-                sh './my_system.exe test'
+                bat 'my_system.exe test'
             }
         }
 
