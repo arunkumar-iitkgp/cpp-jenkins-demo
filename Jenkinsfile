@@ -14,7 +14,7 @@ pipeline {
                 echo 'Compiling C++ Code...'
                 // Compiles main.cpp into an executable named 'my_system'
                 // Note: Windows users use 'g++ main.cpp -o my_system.exe'
-                bat 'g++ main.cpp -o my_system.exe' 
+                bat '"C:\\MinGW\\bin\\g++" main.cpp -o my_system.exe' 
             }
         }
         
